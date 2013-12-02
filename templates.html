@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html lang="es">
   <head>
@@ -432,13 +431,13 @@ valores que pasas como argumentos:</p>
 </pre></div>
 </div>
 <p>Alternativamente, puedes importar nombres de macros individuales desde una plantilla al espacio de nombres actual vía la etiqueta <a class="reference internal" href="tags/from.html"><em>from</em></a>:</p>
-<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">importa</span> <span class="nv">el</span> <span class="nv">input</span> <span class="nv">de</span> <span class="s1">&#39;forms.html&#39;</span> <span class="nv">como</span> <span class="nv">input_field</span> <span class="cp">%}</span><span class="x"></span>
+<div class="highlight-jinja"><div class="highlight"><pre><span class="cp">{%</span> <span class="k">from</span> <span class="s1">'forms.html'</span> <span class="k">import</span> <span class="nv">input</span> <span class="k">as</span> <span class="nv">input_field</span> <span class="cp">%}</span><span class="x"></span>
 
 <span class="x">&lt;dl&gt;</span>
 <span class="x">    &lt;dt&gt;Username&lt;/dt&gt;</span>
-<span class="x">    &lt;dd&gt;</span><span class="cp">{{</span> <span class="nv">input_field</span><span class="o">(</span><span class="s1">&#39;username&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/dd&gt;</span>
+<span class="x">    &lt;dd&gt;</span><span class="cp">{{</span> <span class="nv">input_field</span><span class="o">(</span><span class="s1">'username'</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/dd&gt;</span>
 <span class="x">    &lt;dt&gt;Password&lt;/dt&gt;</span>
-<span class="x">    &lt;dd&gt;</span><span class="cp">{{</span> <span class="nv">input_field</span><span class="o">(</span><span class="s1">&#39;password&#39;</span><span class="o">,</span> <span class="s1">&#39;&#39;</span><span class="o">,</span> <span class="s1">&#39;password&#39;</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/dd&gt;</span>
+<span class="x">    &lt;dd&gt;</span><span class="cp">{{</span> <span class="nv">input_field</span><span class="o">(</span><span class="s1">'password'</span><span class="o">,</span> <span class="s1">''</span><span class="o">,</span> <span class="s1">'password'</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/dd&gt;</span>
 <span class="x">&lt;/dl&gt;</span>
 </pre></div>
 </div>
